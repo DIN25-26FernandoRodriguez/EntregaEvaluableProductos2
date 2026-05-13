@@ -2,18 +2,18 @@
 // Componente de la página de inicio
 function Inicio() {
   return (
-    <div className="relative w-full h-[900px]">
+    <div className="contenedor-fondo-alto">
       {/* Imagen de fondo de la página de inicio */}
       <img
         src="/landingImage.png"
         alt="Logo YourLittleCandle"
-        className="w-full h-full object-cover"
+        className="imagen-ajustada"
       />
 
       {/* Contenido superpuesto en el centro de la imagen */}
-      <div className="absolute top-1/5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-black">
-        <h1 className="text-4xl font-bold">Bienvenido a YourLittleCandle</h1>
-        <p className="mt-4 text-lg">Explora nuestros productos.</p>
+      <div className="texto-superpuesto-centrado">
+        <h1 className="titulo-grande-negrita">Bienvenido a YourLittleCandle</h1>
+        <p className="parrafo-grande">Explora nuestros productos.</p>
       </div>
     </div>
   );

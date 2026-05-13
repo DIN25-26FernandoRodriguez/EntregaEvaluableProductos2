@@ -14,9 +14,9 @@ function Layout({ children }) {
     <main
       id="main-content"
       tabIndex="-1"
-      className="min-h-screen bg-linear-to-bg-br flex flex-col items-center p-8"
+      className="contenedor-principal"
     >
-      <section aria-labelledby="main-section-title" className="w-full max-w-7xl text-center">
+      <section aria-labelledby="main-section-title" className="seccion-centrada">
         {children}
       </section>
     </main>

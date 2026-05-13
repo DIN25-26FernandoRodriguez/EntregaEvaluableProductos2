@@ -12,12 +12,12 @@ import Navbar from "./Navbar";
 function Header() {
   return (
     <>
-      <header className="relative w-full bg-[var(--color-secondary)] items-center justify-center mb-1 border-b-4 border-black">
+      <header className="cabecera-logo">
         
         <img
           src="/Icono.png"
           alt="Logo YourLittleCandle"
-          className="w-60 h-auto mx-auto mb-1"
+          className="imagen-logo"
         />
 
         <Navbar/>

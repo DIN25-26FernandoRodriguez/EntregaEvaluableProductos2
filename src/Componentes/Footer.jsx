@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 function Footer(){
     return(
         <footer
-            className="w-full bg-[var(--color-secondary)] text-black p-4 shadow-lg flex border-black justify-center gap-8"
+            className="pie-pagina"
             aria-label="Footer">
                 <Link to="/redes"> Nuestras redes</Link>
                 <Link to="/ubicaciones">Ubicación</Link>

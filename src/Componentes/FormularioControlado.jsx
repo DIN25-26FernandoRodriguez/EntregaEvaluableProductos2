@@ -62,19 +62,19 @@ function FormularioControlado(){
 
     return (
         
-        <div className="flex justify-center items-center min-h-screen bg-[var(--color-secondary)] p-4">
+        <div className="contenedor-pantalla-centrada">
             <form
                 onSubmit={handleSubmit}
-                className="bg-white border p-6 rounded-lg shadow-md w-full max-w-md"
+                className="formulario-blanco"
                 noValidate
             >
-                <h1 className="text-2xl font-bold mb-6 text-gray-800 border-b pb-2">
+                <h1 className="titulo-seccion">
                     Añadir nuevo producto
                 </h1>
                 <p>{apiError}</p>
 
-                <div className="mb-4">
-                    <label htmlFor="nombre" className="block text-gray-700 font-semibold mb-2">
+                <div className="separacion-bloque">
+                    <label htmlFor="nombre" className="etiqueta-formulario">
                         Nombre del producto
                     </label>
                     <input
@@ -82,42 +82,42 @@ function FormularioControlado(){
                         type="text"
                         value={formData.nombre}
                         onChange={handleChange}
-                        className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="entrada-texto"
                     />
-                    {error.nombre && <p className="text-red-700 bg-red-100 px-3 py-2 rounded-lg mt-2">{error.nombre}</p>}
+                    {error.nombre && <p className="mensaje-error">{error.nombre}</p>}
                 </div>
 
-                <div className="mb-4">
-                    <label htmlFor="descripcion" className="block text-gray-700 font-semibold mb-2">
+                <div className="separacion-bloque">
+                    <label htmlFor="descripcion" className="etiqueta-formulario">
                         Descripcion del producto
                     </label>
                     <textarea
                         id="descripcion"
                         value={formData.descripcion}
                         onChange={handleChange}
-                        className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="entrada-texto"
                     />
-                    {error.descripcion && <p className="text-red-700 bg-red-100 px-3 py-2 rounded-lg mt-2">{error.descripcion}</p>}
+                    {error.descripcion && <p className="mensaje-error">{error.descripcion}</p>}
                 </div>
 
-                <div className="mb-4">
-                    <label htmlFor="categoria" className="block text-gray-700 font-semibold mb-2">
+                <div className="separacion-bloque">
+                    <label htmlFor="categoria" className="etiqueta-formulario">
                         Categoria del producto
                     </label>
                     <select
                         id="categoria"
                         value={formData.categoria}
                         onChange={handleChange}
-                        className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="entrada-texto"
                     >
                     <option value="">Selecciona una opcion</option>
                     <option value="velas-aroma">Velas con aroma</option>
                     </select>
-                    {error.categoria && <p className="text-red-700 bg-red-100 px-3 py-2 rounded-lg mt-2">{error.categoria}</p>}
+                    {error.categoria && <p className="mensaje-error">{error.categoria}</p>}
                 </div>
 
-                <div className="mb-4">
-                    <label htmlFor="precio" className="block text-gray-700 font-semibold mb-2">
+                <div className="separacion-bloque">
+                    <label htmlFor="precio" className="etiqueta-formulario">
                         Precio del producto
                     </label>
                     <input
@@ -125,13 +125,13 @@ function FormularioControlado(){
                         type="number"
                         value={formData.precio}
                         onChange={handleChange}
-                        className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="entrada-texto"
                     />
-                    {error.precio && <p className="text-red-700 bg-red-100 px-3 py-2 rounded-lg mt-2">{error.precio}</p>}
+                    {error.precio && <p className="mensaje-error">{error.precio}</p>}
                 </div>
 
-                <div className="mb-4">
-                    <label htmlFor="imagen" className="block text-gray-700 font-semibold mb-2">
+                <div className="separacion-bloque">
+                    <label htmlFor="imagen" className="etiqueta-formulario">
                         Imagen del producto
                     </label>
                     <input
@@ -139,14 +139,14 @@ function FormularioControlado(){
                     type="text"
                     value={formData.imagen}
                     onChange={handleChange}
-                    className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="entrada-texto"
                     />
-                    {error.imagen && <p className="text-red-700 bg-red-100 px-3 py-2 rounded-lg mt-2">{error.imagen}</p>}
+                    {error.imagen && <p className="mensaje-error">{error.imagen}</p>}
                 </div>
 
                 <button
                     type="submit"
-                    className="w-full bg-[var(--color-secondary)] border text-black py-2 px-4 rounded-lg font-semibold hover:bg-amber-950 focus:outline-none focus:ring-4 focus:ring-amber-700 transition duration-150"
+                    className="boton-formulario"
                 >
                     Añadir producto
                 </button>    
